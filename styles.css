@@ -60,8 +60,6 @@ div {
     border-radius: 5px;
 }
 
-/* layouts */
-
 img {
     display: block;
 }
@@ -99,4 +97,50 @@ main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+#agenda {
+    background-color: lightgray;
+}
+
+input[type="text"] {
+    border: 1px solid black;
+}
+
+a:hover {
+    color: red;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+section p {
+    font-size: 14px; 
+    margin: 5px;
+}
+
+section > h2 {
+    color: green;
+}
+
+h2 + p {
+    color: purple;
+}
+
+h2 ~ p {
+    font-style: italic;
+}
+
+div.box {
+    border: 2px solid black;
+}
+
+section:has(h2) {
+    border: 1px solid blue;
 }
