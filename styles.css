@@ -10,7 +10,7 @@ body {
 }
 
 h1 {
-    color: rgb(128, 0, 111); 
+    color: rgb(60, 8, 53); 
     text-align: center;
     text-decoration: underline;
 }
@@ -58,4 +58,45 @@ div {
     border-color: black;
     border-width: 2px;
     border-radius: 5px;
+}
+
+/* layouts */
+
+img {
+    display: block;
+}
+
+button {
+    display: inline-block;
+}
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+main {
+    position: relative;
+}
+
+.layout-box {
+    width: 40px;
+    height: 40px;
+    max-width: 50px;
+    min-width: 30px;
+    background-color: lightblue;
+    color: black;
+}
+
+.flex-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 }
